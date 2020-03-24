@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>RanGO - Contact</title>
+<title>RanGO - Portfolio</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="RanGO Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
-<link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/portfolio_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/portfolio_responsive.css">
 </head>
 
 <body>
@@ -32,9 +31,9 @@
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About Us</a></li>
 				<li><a href="services.html">Services</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
+				<li class="active"><a href="#">Portfolio</a></li>
 				<li><a href="blog.html">Blog</a></li>
-				<li class="active"><a href="#">Contact</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 			
 			<!-- Search -->
@@ -100,9 +99,9 @@
 				<li class="menu_mm"><a href="index.html">Home</a></li>
 				<li class="menu_mm"><a href="about.html">About Us</a></li>
 				<li class="menu_mm"><a href="services.html">Services</a></li>
-				<li class="menu_mm"><a href="portfolio.html">Portfolio</a></li>
+				<li class="menu_mm active"><a href="portfolio.html">Portfolio</a></li>
 				<li class="menu_mm"><a href="blog.html">Blog</a></li>
-				<li class="menu_mm active"><a href="#">Contact</a></li>
+				<li class="menu_mm"><a href="contact.html">Contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -111,13 +110,13 @@
 
 	<div class="home">
 		<div class="home_background_container prlx_parent">
-			<div class="home_background prlx" style="background-image:url(images/blog_background.jpg)"></div>
+			<div class="home_background prlx" style="background-image:url(images/portfolio_background.jpg)"></div>
 		</div>
 		
 		<div class="home_title">
-			<h2>Contact</h2>
+			<h2>Portfolio</h2>
 			<div class="next_section_scroll">
-				<div class="next_section nav_links" data-scroll-to=".contact">
+				<div class="next_section nav_links" data-scroll-to=".portfolio">
 					<i class="fas fa-chevron-down trans_200"></i>
 					<i class="fas fa-chevron-down trans_200"></i>
 				</div>
@@ -126,91 +125,107 @@
 	
 	</div>
 
-	<!-- Contact -->
+	<!-- Portfolio -->
 
-	<div class="contact">
+	<div class="portfolio">
 		
 		<div class="container">
-			
-			<!-- Google Map Container -->
+			<div class="row">
+				
+				<div class="col">
+					<div class="portfolio_categories button-group filters-button-group">
+						<ul>
+							<li class="portfolio_category active is-checked" data-filter="*">all</li>
+							<li class="portfolio_category" data-filter=".graphic_design">graphic design</li>
+							<li class="portfolio_category" data-filter=".branding">branding</li>
+							<li class="portfolio_category" data-filter=".web_design">web design</li>
+							<li class="portfolio_category" data-filter=".motion_graphic">motion graphic</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
 
 			<div class="row">
 				<div class="col">
-					<div id="google_map">
-						<div class="map_container">
-							<div id="map"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row contact_row">
-				<div class="col-lg-8">
 					
-					<!-- Reply -->
+					<div class="portfolio_items product-grid">
 
-					<div class="reply">
-						
-						<div class="reply_title">Leave a reply</div>
-						<div class="reply_form_container">
+						<!-- Portfolio Item -->
+						<div class="card branding">
+							<div class="card_image">
+								<img class="card-img-top" src="images/portfolio_1.jpg" alt="image by https://unsplash.com/@heysupersimi">
+							</div>
 							
-							<!-- Reply Form -->
-
-							<form id="reply_form" action="post">
-								<div>
-									<input id="reply_form_name" class="input_field reply_form_name" type="text" placeholder="Name" required="required" data-error="Name is required.">
-									<input id="reply_form_email" class="input_field reply_form_email" type="email" placeholder="E-mail" required="required" data-error="Valid email is required.">
-									<input id="reply_form_subject" class="input_field reply_form_subject" type="text" placeholder="Subject" required="required" data-error="Subject is required.">
-									<textarea id="reply_form_message" class="text_field reply_form_message" name="message"  placeholder="Message" rows="4" required data-error="Please, write us a message."></textarea>
-								</div>
-								<div>
-									<button id="reply_form_submit" type="submit" class="reply_submit_btn trans_300" value="Submit">
-										send reply
-									</button>
-								</div>
-
-							</form>
-
+							<div class="card-body">
+								<div class="card-header">branding</div>
+								<div class="card-title">3D Project for inhouse</div>
+								<div class="card-text">Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio ves tibul.  Nec odio vestibulum est mattis.</div>
+								<div class="card-link"><a href="portfolio_item.html">read more</a></div>
+							</div>
 						</div>
+
+						<!-- Portfolio Item -->
+						<div class="card 3d_generated">
+							<div class="card_image">
+								<img class="card-img-top" src="images/portfolio_2.jpg" alt="image by https://unsplash.com/@anthonydelanoix">
+							</div>
+							
+							<div class="card-body">
+								<div class="card-header">3d generated</div>
+								<div class="card-title">Identity branding for company</div>
+								<div class="card-text">Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio ves tibul.  Nec odio vestibulum est mattis.</div>
+								<div class="card-link"><a href="portfolio_item.html">read more</a></div>
+							</div>
+						</div>
+
+						<!-- Portfolio Item -->
+						<div class="card motion_graphic">
+							<div class="card_image">
+								<img class="card-img-top" src="images/portfolio_3.jpg" alt="image by https://unsplash.com/@heysupersimi">
+							</div>
+							
+							<div class="card-body">
+								<div class="card-header">motion graphic</div>
+								<div class="card-title">3D Project for inhouse</div>
+								<div class="card-text">Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio ves tibul.  Nec odio vestibulum est mattis.</div>
+								<div class="card-link"><a href="portfolio_item.html">read more</a></div>
+							</div>
+						</div>
+
+						<!-- Portfolio Item -->
+						<div class="card graphic_design">
+							<div class="card_image">
+								<img class="card-img-top" src="images/portfolio_4.jpg" alt="image by https://unsplash.com/@anthonydelanoix">
+							</div>
+							
+							<div class="card-body">
+								<div class="card-header">graphic design</div>
+								<div class="card-title">Identity branding for company</div>
+								<div class="card-text">Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio ves tibul.  Nec odio vestibulum est mattis.</div>
+								<div class="card-link"><a href="portfolio_item.html">read more</a></div>
+							</div>
+						</div>
+
+						<!-- Portfolio Item -->
+						<div class="card web_design">
+							<div class="card_image">
+								<img class="card-img-top" src="images/portfolio_5.jpg" alt="image by https://unsplash.com/@heysupersimi">
+							</div>
+							
+							<div class="card-body">
+								<div class="card-header">web design</div>
+								<div class="card-title">3D Project for inhouse</div>
+								<div class="card-text">Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio ves tibul.  Nec odio vestibulum est mattis.</div>
+								<div class="card-link"><a href="portfolio_item.html">read more</a></div>
+							</div>
+						</div>
+
 					</div>
-
-				</div>
-
-				<div class="col-lg-4">
-					
-					<!-- Contact Info -->
-
-					<div class="contact_info">
-
-						<div class="contact_title">Contact info</div>
 						
-						<div class="contact_info_container">
-
-							<div class="logo contact_logo">
-								<a href="#">Ran<span>go</span></a>
-							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae enim enim. Sed nec dignissim purus.</p>
-
-							<div class="address_container clearfix">
-								<div class="contact_info_icon">i</div>
-								<div class="contact_info_content">
-									<ul>
-										<li class="address">C/ Libertad, 34</li>
-										<li class="city">05200 Arévalo</li>
-										<li class="phone">0034 37483 2445 322</li>
-										<li class="email">hello@company.com</li>
-									</ul>									
-								</div>
-							</div>
-						</div>
-					</div>
-
 				</div>
 			</div>
-
 		</div>
-			
-		
 	</div>
 
 	<!-- Footer -->
@@ -284,9 +299,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							<li><a href="index.html">Home</a></li>
 							<li><a href="about.html">About us</a></li>
 							<li><a href="services.html">Services</a></li>
-							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="#">Portfolio</a></li>
 							<li><a href="blog.html">Blog</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="contact.html">Contact</a></li>
 							<li><a href="#">Testimonials</a></li>
 						</ul>
 					</div>
@@ -344,12 +359,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
 <script src="plugins/greensock/animation.gsap.min.js"></script>
 <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="plugins/colorbox/jquery.colorbox-min.js"></script>
+<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
 <script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
-<script src="js/CustomGoogleMapMarker.js"></script>
 <script src="plugins/easing/easing.js"></script>
-<script src="js/contact_custom.js"></script>
+<script src="js/portfolio_custom.js"></script>
 </body>
 
 </html>

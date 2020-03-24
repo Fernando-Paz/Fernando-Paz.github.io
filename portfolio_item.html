@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>RanGO - Contact</title>
+<title>RanGO - Portfolio Item</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="RanGO Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
-<link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="plugins/slick-1.8.0/slick.css">
+<link rel="stylesheet" type="text/css" href="styles/portfolio_item_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/portfolio_item_responsive.css">
 </head>
 
 <body>
@@ -34,7 +37,7 @@
 				<li><a href="services.html">Services</a></li>
 				<li><a href="portfolio.html">Portfolio</a></li>
 				<li><a href="blog.html">Blog</a></li>
-				<li class="active"><a href="#">Contact</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 			
 			<!-- Search -->
@@ -102,7 +105,7 @@
 				<li class="menu_mm"><a href="services.html">Services</a></li>
 				<li class="menu_mm"><a href="portfolio.html">Portfolio</a></li>
 				<li class="menu_mm"><a href="blog.html">Blog</a></li>
-				<li class="menu_mm active"><a href="#">Contact</a></li>
+				<li class="menu_mm"><a href="contact.html">Contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -111,13 +114,13 @@
 
 	<div class="home">
 		<div class="home_background_container prlx_parent">
-			<div class="home_background prlx" style="background-image:url(images/blog_background.jpg)"></div>
+			<div class="home_background prlx" style="background-image:url(images/portfolio_background.jpg)"></div>
 		</div>
 		
 		<div class="home_title">
-			<h2>Contact</h2>
+			<h2>Portfolio</h2>
 			<div class="next_section_scroll">
-				<div class="next_section nav_links" data-scroll-to=".contact">
+				<div class="next_section nav_links" data-scroll-to=".portfolio">
 					<i class="fas fa-chevron-down trans_200"></i>
 					<i class="fas fa-chevron-down trans_200"></i>
 				</div>
@@ -126,82 +129,110 @@
 	
 	</div>
 
-	<!-- Contact -->
+	<!-- Portfolio -->
 
-	<div class="contact">
+	<div class="portfolio">
 		
-		<div class="container">
-			
-			<!-- Google Map Container -->
+		<div class="portfolio_slider_container">
 
-			<div class="row">
-				<div class="col">
-					<div id="google_map">
-						<div class="map_container">
-							<div id="map"></div>
-						</div>
-					</div>
+			<!-- Portfolio Slider -->
+			<div class="portfolio_slider">
+				
+				<!-- Slider Item -->
+				<div class="slider_item">
+					<!-- image by https://unsplash.com/@heysupersimi -->
+					<div class="slider_item_background" style="background-image: url(images/portfolio_slider.jpg)"></div>
 				</div>
+
+				<!-- Slider Item -->
+				<div class="slider_item">
+					<!-- image by https://unsplash.com/@heysupersimi -->
+					<div class="slider_item_background" style="background-image: url(images/portfolio_slider.jpg)"></div>
+				</div>
+
+				<!-- Slider Item -->
+				<div class="slider_item">
+					<!-- image by https://unsplash.com/@heysupersimi -->
+					<div class="slider_item_background" style="background-image: url(images/portfolio_slider.jpg)"></div>
+				</div>
+
+				<!-- Slider Item -->
+				<div class="slider_item">
+					<div class="slider_item_background" style="background-image: url(images/portfolio_slider.jpg)"></div>
+				</div>
+
+				<!-- Slider Item -->
+				<div class="slider_item">
+					<!-- image by https://unsplash.com/@heysupersimi -->
+					<div class="slider_item_background" style="background-image: url(images/portfolio_slider.jpg)"></div>
+				</div>
+
+				<!-- Slider Item -->
+				<div class="slider_item">
+					<!-- image by https://unsplash.com/@heysupersimi -->
+					<div class="slider_item_background" style="background-image: url(images/portfolio_slider.jpg)"></div>
+				</div>
+
+				<!-- Slider Item -->
+				<div class="slider_item">
+					<!-- image by https://unsplash.com/@heysupersimi -->
+					<div class="slider_item_background" style="background-image: url(images/portfolio_slider.jpg)"></div>
+				</div>
+
 			</div>
+		</div>
 
-			<div class="row contact_row">
-				<div class="col-lg-8">
+		<div class="portfolio_content">
+			
+			<div class="container">
+				<div class="row">
 					
-					<!-- Reply -->
-
-					<div class="reply">
-						
-						<div class="reply_title">Leave a reply</div>
-						<div class="reply_form_container">
-							
-							<!-- Reply Form -->
-
-							<form id="reply_form" action="post">
-								<div>
-									<input id="reply_form_name" class="input_field reply_form_name" type="text" placeholder="Name" required="required" data-error="Name is required.">
-									<input id="reply_form_email" class="input_field reply_form_email" type="email" placeholder="E-mail" required="required" data-error="Valid email is required.">
-									<input id="reply_form_subject" class="input_field reply_form_subject" type="text" placeholder="Subject" required="required" data-error="Subject is required.">
-									<textarea id="reply_form_message" class="text_field reply_form_message" name="message"  placeholder="Message" rows="4" required data-error="Please, write us a message."></textarea>
-								</div>
-								<div>
-									<button id="reply_form_submit" type="submit" class="reply_submit_btn trans_300" value="Submit">
-										send reply
-									</button>
-								</div>
-
-							</form>
-
-						</div>
+					<div class="col-lg-4 portfolio_title_container">
+						<div class="portfolio_category">branding</div>
+						<h2 class="portfolio_title">3D Project for Inhouse</h2>
 					</div>
 
 				</div>
 
-				<div class="col-lg-4">
-					
-					<!-- Contact Info -->
+				<div class="row">
 
-					<div class="contact_info">
+					<div class="col-lg-4 order-lg-1 order-2">
+						<p class="portfolio_text">Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio ves tibul.  Nec odio vestibulum est mattis. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna. </p>
+						<div class="portfolio_button portfolio_button_1 trans_200">
+							<a class="trans_200" href="#">see similar projects</a>
+						</div>
+					</div>
 
-						<div class="contact_title">Contact info</div>
-						
-						<div class="contact_info_container">
+					<div class="col-lg-4 order-lg-2 order-3">
+						<p class="portfolio_text">Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio ves tibul.  Nec odio vestibulum est mattis. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna. </p>
+						<div class="portfolio_button portfolio_button_2 trans_200">
+							<a class="trans_200" href="#">see similar projects</a>
+						</div>
+					</div>
 
-							<div class="logo contact_logo">
-								<a href="#">Ran<span>go</span></a>
-							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae enim enim. Sed nec dignissim purus.</p>
+					<div class="col-lg-4 order-lg-3 order-1">
+						<div class="portfolio_info_box">
 
-							<div class="address_container clearfix">
-								<div class="contact_info_icon">i</div>
-								<div class="contact_info_content">
-									<ul>
-										<li class="address">C/ Libertad, 34</li>
-										<li class="city">05200 Arévalo</li>
-										<li class="phone">0034 37483 2445 322</li>
-										<li class="email">hello@company.com</li>
-									</ul>									
-								</div>
-							</div>
+							<ul class="info_box_item">
+								<li class="info_box_title">Created by</li>
+								<li class="info_box_content">Colorlib</li>
+							</ul>
+
+							<ul class="info_box_item">
+								<li class="info_box_title">Client</li>
+								<li class="info_box_content">Online Company</li>
+							</ul>
+
+							<ul class="info_box_item">
+								<li class="info_box_title">Category</li>
+								<li class="info_box_content">PSD file</li>
+							</ul>
+
+							<ul class="info_box_item">
+								<li class="info_box_title">Date Created</li>
+								<li class="info_box_content">November 2017</li>
+							</ul>
+
 						</div>
 					</div>
 
@@ -209,7 +240,6 @@
 			</div>
 
 		</div>
-			
 		
 	</div>
 
@@ -286,7 +316,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							<li><a href="services.html">Services</a></li>
 							<li><a href="portfolio.html">Portfolio</a></li>
 							<li><a href="blog.html">Blog</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="contact.html">Contact</a></li>
 							<li><a href="#">Testimonials</a></li>
 						</ul>
 					</div>
@@ -344,12 +374,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
 <script src="plugins/greensock/animation.gsap.min.js"></script>
 <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="plugins/colorbox/jquery.colorbox-min.js"></script>
+<script src="plugins/slick-1.8.0/slick.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
 <script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
-<script src="js/CustomGoogleMapMarker.js"></script>
 <script src="plugins/easing/easing.js"></script>
-<script src="js/contact_custom.js"></script>
+<script src="js/portfolio_item_custom.js"></script>
 </body>
 
 </html>
