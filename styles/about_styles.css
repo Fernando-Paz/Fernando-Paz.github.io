@@ -625,7 +625,7 @@ section
 {
 	width: 100%;
 	padding-top: 123px;
-	padding-bottom: 129px;
+	padding-bottom: 0px;
 }
 .icon_box_title h1
 {
@@ -649,7 +649,7 @@ section
 }
 .icon_box_item
 {
-	margin-bottom: 63px;
+	margin-bottom: 10px;
 }
 .icon_box_item:last-child
 {
@@ -657,13 +657,58 @@ section
 }
 .icon_box_item h2
 {
-	margin-bottom: 21px;
+	margin-bottom: 10px;
 }
 .icon_box_item p
 {
 	margin-bottom: 0px;
 }
 
+
+/**/
+
+.icon_boxes1
+{
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.icon_box_title h1
+{
+	line-height: 1.25;
+}
+.icon_box_button
+{
+	margin-top: 40px;
+}
+.icon_box_button:hover
+{
+	background: #452b78;
+}
+.icon_box_button:hover a
+{
+	color: #FFFFFF;
+}
+.icon_box_col
+{
+	padding-top: 7px;
+}
+.icon_box_item
+{
+	margin-bottom: 10px;
+}
+.icon_box_item:last-child
+{
+	margin-bottom: 0px;
+}
+.icon_box_item h2
+{
+	margin-bottom: 10px;
+}
+.icon_box_item p
+{
+	margin-bottom: 0px;
+}
 /*********************************
 6. Vertical Slider Section
 *********************************/
@@ -816,12 +861,12 @@ section
 
 .team
 {
-	padding-top: 116px;
-	padding-bottom: 128px;
+	padding-top: 130px;
+	padding-bottom: 18px;
 }
 .team_title
 {
-	margin-bottom: 186px;
+	margin-bottom: 60px;
 }
 .team_title h1
 {

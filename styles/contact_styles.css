@@ -624,8 +624,8 @@ section
 
 .contact
 {
-	padding-top: 129px;
-	padding-bottom: 130px;
+	padding-top: 30px;
+	padding-bottom: 10px;
 }
 
 /*********************************
@@ -698,7 +698,7 @@ section
 
 .contact_row
 {
-	margin-top: 119px;
+	margin-top: 30px;
 }
 .reply
 {
@@ -711,7 +711,7 @@ section
 }
 .reply_form_container
 {
-	margin-top: 54px;
+	margin-top: 14px;
 }
 .input_field
 {
@@ -874,11 +874,11 @@ section
 }
 .contact_info_container p
 {
-	margin-top: 39px;
+	margin-top: 50px;
 }
 .address_container
 {
-	margin-top: 51px;
+	margin-top: 110px;
 }
 .contact_info_icon
 {
